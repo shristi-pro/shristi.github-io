@@ -2,145 +2,88 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Shristi Ghalan — Creative CV & Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shristi Ghalan - Portfolio</title>
 
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
-
-  <style>
-    /* Minimal fallback styling (you can move to style.css) */
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #0f172a;
-      color: white;
-      scroll-behavior: smooth;
-    }
-
-    section {
-      padding: 70px 20px;
-    }
-
-    .container {
-      max-width: 1100px;
-      margin: auto;
-    }
-
-    h1, h2, h3 {
-      margin: 0 0 10px;
-    }
-
-    .btn {
-      display: inline-block;
-      padding: 10px 18px;
-      margin: 10px 5px;
-      border-radius: 8px;
-      background: #38bdf8;
-      color: black;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    .grid {
-      display: grid;
-      gap: 20px;
-    }
-
-    .grid-3 {
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    }
-
-    .card {
-      background: #1e293b;
-      padding: 20px;
-      border-radius: 12px;
-    }
-
-    .highlight {
-      color: #38bdf8;
-    }
-  </style>
 </head>
 
 <body>
 
 <!-- HERO -->
-<section id="hero">
-  <div class="container">
-    <h1>Hi, I'm <span class="highlight">Shristi Ghalan</span></h1>
-    <h2>UI/UX Designer • Graphic Designer • Web Developer</h2>
+<header class="header">
+  <div class="container profile">
 
-    <p>
-      I create modern, user-friendly, and visually powerful digital experiences
-      that combine design creativity with clean development.
-    </p>
+    <img src="images/profile-shristi.png" alt="Profile Photo" class="profile-img" />
 
-    <a href="#contact" class="btn">Hire Me</a>
-    <a href="#" class="btn">Download CV</a>
+    <div class="hero-text">
+      <h1>Shristi Ghalan</h1>
+
+      <p class="role">
+        Digital Marketing Officer | UI/UX Designer | Graphic Designer | Web Designer
+      </p>
+
+      <p class="summary">
+        Creative and versatile designer with experience in UI/UX, branding, digital marketing,
+        and web development. Focused on clean design and user-friendly experiences.
+      </p>
+
+      <div class="contact">
+        <p>📍 Khumaltar, Lalitpur, Nepal</p>
+        <p>📞 +977 9862763143</p>
+        <p>✉️ shristitamang586@gmail.com</p>
+      </div>
+
+      <a href="#contact" class="btn">Hire Me</a>
+      <a href="images\Shristi-Ghalan-CV.pdf" class="btn">Download CV</a>
+    </div>
+
+  </div>
+</header>
+
+<!-- STATS -->
+<section class="section gray">
+  <div class="container grid">
+    <div class="card"><h2>40+</h2><p>GraphicDesign Projects</p></div>
+    <div class="card"><h2>10+</h2><p>Web Projects</p></div>
   </div>
 </section>
 
 <!-- ABOUT -->
-<section id="about">
+<section class="section">
   <div class="container">
     <h2>About Me</h2>
-    <p>
+    <p class="about">
       I am a passionate UI/UX Designer, Graphic Designer, and Web Developer from Nepal.
-      I specialize in turning ideas into visually appealing and functional digital products.
-      My focus is on clean design, usability, and modern web experiences.
+      I specialize in turning ideas into visually appealing and functional digital products
+      with a focus on usability and modern design.
     </p>
   </div>
 </section>
 
-<!-- STATS -->
-<section>
-  <div class="container grid grid-3">
-    <div class="card">
-      <h2>20+</h2>
-      <p>Design Projects</p>
-    </div>
-    <div class="card">
-      <h2>10+</h2>
-      <p>Web Projects</p>
-    </div>
-    <div class="card">
-      <h2>5+</h2>
-      <p>Happy Clients</p>
-    </div>
-  </div>
-</section>
-
 <!-- SKILLS -->
-<section id="skills">
+<section class="section gray">
   <div class="container">
     <h2>Skills</h2>
 
-    <div class="grid grid-3">
-      <div class="card">
-        <h3>Design</h3>
-        <p>UI/UX, Figma, Canva, Branding, Logo Design, Poster Design</p>
-      </div>
-
-      <div class="card">
-        <h3>Development</h3>
-        <p>HTML, CSS, JavaScript, ASP.NET, Flask, SQL Server</p>
-      </div>
-
-      <div class="card">
-        <h3>Tools</h3>
-        <p>Figma, Photoshop, Illustrator, VS Code, GitHub</p>
-      </div>
+    <div class="grid">
+      <div class="card">UI/UX Design & Wireframing</div>
+      <div class="card">Graphic Design & Branding</div>
+      <div class="card">Social Media Marketing</div>
+      <div class="card">HTML, CSS, JavaScript</div>
+      <div class="card">ASP.NET & SQL Server</div>
+      <div class="card">Figma, Canva, Photoshop</div>
     </div>
   </div>
 </section>
 
 <!-- SERVICES -->
-<section>
+<section class="section">
   <div class="container">
     <h2>Services</h2>
 
-    <div class="grid grid-3">
+    <div class="grid">
       <div class="card">UI/UX Design</div>
       <div class="card">Website Design</div>
       <div class="card">Front-End Development</div>
@@ -151,62 +94,100 @@
   </div>
 </section>
 
+<!-- EXPERIENCE -->
+<section class="section gray">
+  <div class="container">
+    <h2>Work Experience</h2>
+
+    <div class="timeline">
+
+      <div class="item">
+        <h3>Digital Marketing Officer / Graphic Designer</h3>
+        <span>May 2026 – Present | Velonix Technologies</span>
+        <p>Designed branding, packaging, social media posts, and marketing visuals.</p>
+      </div>
+
+      <div class="item">
+        <h3>Operations & Digital Marketing Officer</h3>
+        <span>Feb 2025 – Apr 2026 | Laba IT Training Center</span>
+        <p>Managed campaigns, content creation, and digital branding.</p>
+      </div>
+
+      <div class="item">
+        <h3>Digital Marketing Intern</h3>
+        <span>Sep 2024 – Dec 2024 | Laba IT Training Center</span>
+        <p>Assisted in social media management and content design.</p>
+      </div>
+
+      <div class="item">
+        <h3>Customer Support Representative</h3>
+        <span>Jun 2022 – Sep 2022 | WorldLink</span>
+        <p>Handled customer support and solved technical issues.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section class="section">
+  <div class="container">
+    <h2>Education</h2>
+
+    <div class="grid">
+      <div class="card">
+        <h3>B.Sc. IT (Hons)</h3>
+        <p>Asia Pacific University (APU / APIIT)</p>
+      </div>
+
+      <div class="card">
+        <h3>+2 Science</h3>
+        <p>Einstein Academy</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- PROJECTS -->
-<section id="projects">
+<section class="section gray">
   <div class="container">
     <h2>Projects</h2>
 
-    <div class="grid grid-3">
-      <div class="card">
-        <h3>Room Rental System</h3>
-        <p>ASP.NET + SQL Server</p>
-      </div>
+    <div class="grid">
 
       <div class="card">
-        <h3>Travel Website</h3>
-        <p>Flask + Bootstrap</p>
-      </div>
+  <h3>UI/UX Design</h3>
+  <p>Wireframes, prototypes, and responsive UI designs.</p>
+  <!-- PDF links instead of multiple images -->
+  <div class="pdf-links">
+    <a href="pdfs/UIUXs.pdf" target="_blank">View Design (PDF)</a>
+  </div>
+</div>
 
-      <div class="card">
-        <h3>Portfolio Website</h3>
-        <p>HTML + CSS + JS</p>
-      </div>
+<div class="card">
+  <h3>Graphic Design</h3>
+  <p>Posters, logos, branding, and social media designs.</p>
+
+  <!-- PDF links instead of multiple images -->
+  <div class="pdf-links">
+    <a href="pdfs/graphics.pdf" target="_blank">View Design (PDF)</a>
+  </div>
+</div>
+
     </div>
   </div>
 </section>
 
-<!-- CERTIFICATES -->
-<section id="certificates">
+<!-- LANGUAGES -->
+<section class="section gray">
   <div class="container">
-    <h2>Certificates</h2>
-
-    <div class="grid grid-3">
-      <div class="card">Web Development</div>
-      <div class="card">UI/UX Design</div>
-      <div class="card">Python Programming</div>
-      <div class="card">Cyber Security</div>
-    </div>
-  </div>
-</section>
-
-<!-- EXPERIENCE -->
-<section>
-  <div class="container">
-    <h2>Experience</h2>
-
-    <div class="card">
-      <h3>Freelance Designer & Developer</h3>
-      <p>2024 - Present</p>
-      <p>
-        Worked on UI/UX designs, branding projects, posters, and web development
-        for various clients and personal projects.
-      </p>
-    </div>
+    <h2>Languages</h2>
+    <p class="center">English | Nepali | Hindi | Tamang</p>
   </div>
 </section>
 
 <!-- CONTACT -->
-<section id="contact">
+<section id="contact" class="section">
   <div class="container">
     <h2>Contact Me</h2>
 
@@ -221,12 +202,11 @@
 </section>
 
 <!-- FOOTER -->
-<footer style="text-align:center; padding:20px; background:#020617;">
-  <p>© 2025 Shristi Ghalan | Designed with creativity & code</p>
+<footer class="footer">
+  <p>© 2026 Shristi Ghalan | All Rights Reserved</p>
 
   <div>
-    <a href="https://www.facebook.com/shristi.lama.9889" style="color:white; margin:0 10px;"><i class="fab fa-facebook"></i></a>
-    <a href="https://www.linkedin.com/in/shristi-ghalan-7a5aa1260/" style="color:white; margin:0 10px;"><i class="fab fa-linkedin"></i></a>
+    <a href="https://www.linkedin.com/in/shristi-ghalan-7a5aa1260/" class="social"><i class="fab fa-linkedin"></i></a>
   </div>
 </footer>
 
