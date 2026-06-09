@@ -94,7 +94,7 @@ body {
 
 /* TEXT */
 .hero-text h1 {
-  font-size: 48px;  background: linear-gradient(90deg, #38bdf8, #a78bfa);
+  font-size: 48px;
   -webkit-text-fill-color: transparent;
 }
 
