@@ -173,6 +173,27 @@
     .contact-cta h3{font-family:'Playfair Display',serif;font-size:1.4rem;color:var(--text);}
     .contact-cta p{font-size:14px;color:var(--muted);line-height:1.7;}
 
+    /* Contact Form */
+    .contact-form-wrap{background:linear-gradient(135deg,rgba(124,58,237,0.08),rgba(79,31,207,0.04));border:1px solid var(--border);border-radius:var(--radius);padding:1.75rem;}
+    .contact-form-wrap h3{font-family:'Playfair Display',serif;font-size:1.35rem;color:var(--text);margin-bottom:4px;}
+    .contact-form-wrap p{font-size:13px;color:var(--muted);margin-bottom:1.25rem;}
+    .form-row{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
+    .form-group{margin-bottom:12px;}
+    .form-group label{display:block;font-size:11px;font-weight:700;letter-spacing:0.08em;color:var(--muted);text-transform:uppercase;margin-bottom:6px;}
+    .form-group input,.form-group textarea,.form-group select{
+      width:100%;padding:10px 14px;background:var(--bg3);
+      border:1px solid var(--border);border-radius:var(--radius-sm);
+      color:var(--text);font-family:'Inter',sans-serif;font-size:14px;
+      transition:border-color 0.2s,box-shadow 0.2s;outline:none;resize:none;
+    }
+    .form-group input:focus,.form-group textarea:focus,.form-group select:focus{
+      border-color:var(--accent);box-shadow:0 0 0 3px rgba(167,139,250,0.1);
+    }
+    .form-group textarea{height:110px;}
+    .form-group select option{background:var(--bg3);}
+    .form-success{display:none;background:rgba(34,197,94,0.08);border:1px solid rgba(34,197,94,0.25);border-radius:var(--radius-sm);padding:12px 16px;color:var(--green);font-size:13.5px;font-weight:500;margin-top:10px;align-items:center;gap:8px;}
+    .form-success.show{display:flex;}
+ 
     /* ── HAMBURGER ── */
     .hamburger{
       display:none;flex-direction:column;justify-content:center;align-items:center;
@@ -261,8 +282,7 @@
       </div>
     </li>
     <li><a data-page="education">Education</a></li>
-    <li><a data-page="contact">Contact</a></li>
-    <li><a data-page="contact" class="nav-cta">Hire Me</a></li>
+    <li><a data-page="contact" class="nav-cta">Contact Me</a></li>
   </ul>
 </nav>
 
@@ -289,7 +309,7 @@
 
 <footer>
   <div class="footer-brand">
-    <span class="footer-name"><strong>By - Shristi Ghalan</strong> &nbsp;·&nbsp; © 2026 All Rights Reserved</span>
+    <span class="footer-name"><strong>Designed By - Shristi Ghalan</strong> &nbsp;·&nbsp; © 2026 All Rights Reserved</span>
   </div>
   <div class="footer-socials">
     <a href="https://www.linkedin.com/in/shristi-ghalan-7a5aa1260/" class="social-btn" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
@@ -447,8 +467,7 @@
       <div class="exp-dot current"></div>
       <p class="exp-company">Velonix Technologies</p>
       <p class="exp-role">Digital Marketing Officer / Graphic Designer</p>
-      <p class="exp-period"><i class="fas fa-calendar-alt" style="margin-right:4px;"></i>May 2026 – Present</p>
-      <ul class="exp-bullets">
+      <p class="exp-period"><i class="fas fa-calendar-alt"></i> May 2026 – Present <span style="margin-left:8px;font-size:11px;background:rgba(34,197,94,0.1);color:#22c55e;padding:2px 9px;border-radius:20px;font-weight:600;">Current</span></p>      <ul class="exp-bullets">
         <li>Designed social media posts, branding, packaging, and promotional graphics.</li>
         <li>Managed digital marketing tasks including SEO and WordPress updates.</li>
         <li>Used ClickUp for project management and collaborated on creative strategies.</li>
@@ -571,12 +590,51 @@
         <a href="https://github.com/shristi-pro" class="social-btn" target="_blank"><i class="fab fa-github"></i> GitHub</a>
       </div>
     </div>
-    <div class="contact-cta">
-      <h3>Open to opportunities</h3>
-      <p>Whether you need a designer for a project, a freelance collaborator, or want to discuss a full-time role — I'd love to hear from you.</p>
-      <a href="mailto:shristitamang586@gmail.com" class="btn btn-primary" style="align-self:flex-start;"><i class="fas fa-paper-plane"></i> Send Email</a>
-      <a href="images/Shristi-Ghalan-CV.pdf" class="btn btn-outline" download style="align-self:flex-start;"><i class="fas fa-download"></i> Download CV</a>
+    <form action="https://formsubmit.co/shristitamang586@gmail.com" method="POST">
+
+    <!-- Disable Captcha -->
+    <input type="hidden" name="_captcha" value="false">
+
+    <!-- Redirect after submission -->
+    <input type="hidden" name="_next" value="https://yourusername.github.io/thankyou.html">
+
+    <div class="form-row">
+        <div class="form-group">
+            <label>Your Name</label>
+            <input type="text" name="name" placeholder="e.g. Shristi Tamang" required>
+        </div>
+
+        <div class="form-group">
+            <label>Email Address</label>
+            <input type="email" name="email" placeholder="shristitamang586@gmail.com" required>
+        </div>
     </div>
+
+    <div class="form-group">
+        <label>Subject</label>
+        <select name="subject" required>
+            <option value="">Select a topic...</option>
+            <option>UI/UX Design Project</option>
+            <option>Graphic Design Work</option>
+            <option>Digital Marketing</option>
+            <option>Web Design/Development</option>
+            <option>Full-time Opportunity</option>
+            <option>Other</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label>Message</label>
+        <textarea name="message" placeholder="Tell me about your project..." required></textarea>
+    </div>
+
+    <button type="submit" class="btn btn-primary">
+        <i class="fas fa-paper-plane"></i> Send Message
+    </button>
+
+</form>
+  </div>
+</div>
   </div>
 </div>
 </template>
