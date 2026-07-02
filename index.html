@@ -582,37 +582,54 @@
   <div class="section-divider"></div>
   <div class="contact-grid">
     <div>
-      <div class="card contact-row"><div class="contact-row-icon"><i class="fas fa-envelope"></i></div><div class="contact-row-text"><span>Email</span><a href="mailto:shristitamang586@gmail.com">shristitamang586@gmail.com</a></div></div>
-      <div class="card contact-row"><div class="contact-row-icon"><i class="fas fa-phone"></i></div><div class="contact-row-text"><span>Phone</span><a href="tel:+9779862763143">+977 9862763143</a></div></div>
-      <div class="card contact-row"><div class="contact-row-icon"><i class="fas fa-map-marker-alt"></i></div><div class="contact-row-text"><span>Location</span><p>Khumaltar, Lalitpur, Nepal</p></div></div>
+      <div class="card contact-row">
+        <div class="contact-row-icon"><i class="fas fa-envelope"></i></div>
+        <div class="contact-row-text"><span>Email</span><a href="mailto:shristitamang586@gmail.com">shristitamang586@gmail.com</a></div>
+      </div>
+      <div class="card contact-row">
+        <div class="contact-row-icon"><i class="fas fa-phone"></i></div>
+        <div class="contact-row-text"><span>Phone</span><a href="tel:+9779862763143">+977 9862763143</a></div>
+      </div>
+      <div class="card contact-row">
+        <div class="contact-row-icon"><i class="fas fa-map-marker-alt"></i></div>
+        <div class="contact-row-text"><span>Location</span><p>Khumaltar, Lalitpur, Nepal</p></div>
+      </div>
       <div style="display:flex;gap:10px;margin-top:12px;flex-wrap:wrap;">
         <a href="https://www.linkedin.com/in/shristi-ghalan-7a5aa1260/" class="social-btn" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
         <a href="https://github.com/shristi-pro" class="social-btn" target="_blank"><i class="fab fa-github"></i> GitHub</a>
       </div>
     </div>
-    <form action="https://formsubmit.co/shristitamang586@gmail.com" method="POST">
 
-    <!-- Disable Captcha -->
-    <input type="hidden" name="_captcha" value="false">
+    <div class="contact-form-wrap">
+      <h3>Send a Message</h3>
+      <p>Fill out the form and I'll get back to you as soon as possible.</p>
 
-    <!-- Redirect after submission -->
-    <input type="hidden" name="_next" value="https://yourusername.github.io/thankyou.html">
+      <form action="https://formsubmit.co/shristitamang586@gmail.com" method="POST">
 
-    <div class="form-row">
-        <div class="form-group">
+        <!-- Disable Captcha page -->
+        <input type="hidden" name="_captcha" value="false">
+
+        <!-- Email subject line -->
+        <input type="hidden" name="_subject" value="New message from portfolio site">
+
+        <!-- No _next field: FormSubmit will show its own thank-you page.
+             If you later set up a real GitHub Pages thank-you page, add:
+             <input type="hidden" name="_next" value="https://shristi-pro.github.io/thankyou.html"> -->
+
+        <div class="form-row">
+          <div class="form-group">
             <label>Your Name</label>
-            <input type="text" name="name" placeholder="e.g. Shristi Tamang" required>
+            <input type="text" name="name" placeholder="e.g. Your name" required>
+          </div>
+          <div class="form-group">
+            <label>Email Address</label>
+            <input type="email" name="email" placeholder="...@gmail.com" required>
+          </div>
         </div>
 
         <div class="form-group">
-            <label>Email Address</label>
-            <input type="email" name="email" placeholder="shristitamang586@gmail.com" required>
-        </div>
-    </div>
-
-    <div class="form-group">
-        <label>Subject</label>
-        <select name="subject" required>
+          <label>Subject</label>
+          <select name="subject" required>
             <option value="">Select a topic...</option>
             <option>UI/UX Design Project</option>
             <option>Graphic Design Work</option>
@@ -620,19 +637,23 @@
             <option>Web Design/Development</option>
             <option>Full-time Opportunity</option>
             <option>Other</option>
-        </select>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>Message</label>
+          <textarea name="message" placeholder="Tell me about your project..." required></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary">
+          <i class="fas fa-paper-plane"></i> Send Message
+        </button>
+      </form>
     </div>
 
-    <div class="form-group">
-        <label>Message</label>
-        <textarea name="message" placeholder="Tell me about your project..." required></textarea>
-    </div>
-
-    <button type="submit" class="btn btn-primary">
-        <i class="fas fa-paper-plane"></i> Send Message
-    </button>
-
-</form>
+  </div>
+</div>
+</template>
   </div>
 </div>
   </div>
